@@ -1,29 +1,32 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator';
+
+// For sample to use store-module with vuex-class.
+import { State, Action, namespace, Mutation } from 'vuex-class';
+import { SampleActionType } from '@/store/sample/action-types'
+import { SampleMutationType } from '@/store/sample/mutation-types'
+
+const sampleModule = namespace('sample');
+
+@Component
+export default class App extends Vue {
+
+  // For sample to use store-module with vuex-class.
+  @sampleModule.State('sample') stateSample: any;
+  @sampleModule.Action(SampleActionType.SAMPLE) actionSample: any;
+  @sampleModule.Mutation(SampleMutationType.SAMPLE) mutationSample: any;
+
 }
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+</script>
+
+<style lang="scss">
+@import '@/assets/stylesheets/common.sass';
+
+#app {
 }
 </style>
