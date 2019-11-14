@@ -41,7 +41,6 @@ A front boilerplate with Vue, Vuex, TypeScript, atomic design. Most of the boile
 
 ## Vuex with Typescript
 
-In this project, for handling vuex with TypeScript environment safely and more easily to use,  
-utilize StoreOptions & [vuex-class](https://github.com/ktsn/vuex-class)).  
+In this project, for handling vuex with TypeScript environment safely and more easily to use, utilize StoreOptions & [vuex-class](https://github.com/ktsn/vuex-class)).  
 Mainly, developed based on [this web articles](https://codeburst.io/vuex-and-typescript-3427ba78cfa8),
 [vuex-class document](https://github.com/ktsn/vuex-class).
