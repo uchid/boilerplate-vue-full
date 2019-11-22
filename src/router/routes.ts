@@ -1,4 +1,3 @@
-import { RouteConfig, Route } from 'vue-router'
+import { RouteConfig } from 'vue-router';
 
-export const routes: Array<RouteConfig> = [
-]
+export const routes: Array<RouteConfig> = [];

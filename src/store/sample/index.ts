@@ -5,8 +5,8 @@ import { mutations } from './mutations';
 import { getters } from './getters';
 
 const state: SampleState = {
-  sample: 'sample'
-}
+  sample: 'sample',
+};
 
 export const sample: Module<SampleState, RootState> = {
   namespaced: true,
@@ -14,4 +14,4 @@ export const sample: Module<SampleState, RootState> = {
   actions,
   mutations,
   getters,
-}
+};

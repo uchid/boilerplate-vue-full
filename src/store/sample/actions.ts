@@ -1,10 +1,8 @@
-import { ActionTree } from 'vuex'
+import { ActionTree } from 'vuex';
 
 import { SampleState, RootState } from '../types';
-import { SampleActionType } from './action-types';
+import * as aTypes from './action-types';
 
 export const actions: ActionTree<SampleState, RootState> = {
-  [SampleActionType.SAMPLE]: () => {
-    
-  }
-}
+  [aTypes.SAMPLE]: () => {},
+};

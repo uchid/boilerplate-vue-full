@@ -1,3 +1,1 @@
-export namespace SampleActionType {
-  export const SAMPLE = 'SAMPLE'
-}
+export const SAMPLE = 'SAMPLE';

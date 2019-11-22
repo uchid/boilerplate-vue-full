@@ -19,7 +19,7 @@ A front boilerplate with Vue, Vuex, TypeScript, atomic design. Most of the boile
 - sass
 - [axios](https://github.com/axios/axios)
 - [Jest](https://jestjs.io/ja/), ts-jest
-- [tslint-config-airbnb](https://github.com/progre/tslint-config-airbnb)
+- [typescript-eslint](https://github.com/typescript-eslint/typescript-eslint)
 
 # Development
 
@@ -31,7 +31,7 @@ A front boilerplate with Vue, Vuex, TypeScript, atomic design. Most of the boile
 # script
   yarn run serve      # start up for dev
   yarn run build      # build for production etc.
-  yarn run lint       # exec lint with airbib style
+  yarn run lint       # exec lint with .eslintrc.js(includes prettier rule)
   yarn run test:e2e   # test for e2e with nightwatch
   yarn run test:unit  # test for unit with jest
 
@@ -44,3 +44,7 @@ A front boilerplate with Vue, Vuex, TypeScript, atomic design. Most of the boile
 In this project, for handling vuex with TypeScript environment safely and more easily to use, utilize StoreOptions & [vuex-class](https://github.com/ktsn/vuex-class)).  
 Mainly, developed based on [this web articles](https://codeburst.io/vuex-and-typescript-3427ba78cfa8),
 [vuex-class document](https://github.com/ktsn/vuex-class).
+
+## 【recommend】 Config prettier & linter auto fix/check on timing you want
+
+Set your editor(ex. vscode, sublime, vim, etc.) cofiguration to format(prettier) & check(eslint) syntax on save file if needed. Or exec it(or `eslint --fix` ?) on git commit with githook.

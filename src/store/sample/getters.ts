@@ -1,7 +1,5 @@
 import { GetterTree } from 'vuex';
 
-import { RootState ,SampleState } from '../types';
+import { RootState, SampleState } from '../types';
 
-export const getters: GetterTree<SampleState, RootState> = {
-  
-}
+export const getters: GetterTree<SampleState, RootState> = {};
