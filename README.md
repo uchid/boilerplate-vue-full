@@ -47,5 +47,5 @@ Mainly, developed based on [this web articles](https://codeburst.io/vuex-and-typ
 
 ## 【recommend】 Config linter auto fix/check on timing you want
 
-Set your editor(ex. vscode, sublime, vim, etc.) or package.json cofiguration to format~~(prettier)~~ & check(eslint) syntax on save file if needed. Or exec it(or `eslint --fix` ?) on git commit with githook.
+Set your editor(ex. vscode, sublime, vim, etc.) or package.json cofiguration to format ~~(prettier)~~ & check(eslint) syntax on save file if needed. Or exec it(or `eslint --fix` ?) on git commit with githook.
 *removed setting prettier with eslint
